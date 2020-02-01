@@ -1,0 +1,12 @@
+#Create date time wise fie through code
+
+import datetime as dt
+
+filename=dt.datetime.now()
+
+def create_file():
+    with open(filename.strftime("%Y-%m-%d-%H-%M_%S")+".txt","w") as file:
+        file.write("")            #write some code here
+
+create_file()
+print("file created successfully")
