@@ -1,0 +1,13 @@
+# Nth position Fibonacci Number With help of recursion.
+
+def N_fibo(n,a,b):
+  if n==1:
+    return a
+  elif n==2:
+    return b
+
+  return N_fibo(n-1,b,a+b)
+  
+
+n = int(input())
+print(N_fibo(n,0,1))
